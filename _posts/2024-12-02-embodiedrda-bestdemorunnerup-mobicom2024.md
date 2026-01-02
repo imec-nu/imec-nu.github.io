@@ -1,5 +1,5 @@
 ---
-title: 'EmbodiedRDA Receives Best Demo Runner-Up Award at MobiCom 2024'
+title: 'EmbodiedRDA Receives <span style="color:red">Best Demo Runner-Up</span> Award at MobiCom 2024'
 author: imec
 group: recent
 image: images/news/12-02-2025/PXL_20241120_000535214-scaled.png

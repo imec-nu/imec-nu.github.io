@@ -1,5 +1,5 @@
 ---
-title: '"DomAIn: Towards Programless Smart Homes" receives Best Paper Award at ACM HumanSys 2025'
+title: '"DomAIn: Towards Programless Smart Homes" receives <span style="color:red">Best Paper</span> Award at ACM HumanSys 2025'
 author: imec
 group: recent
 image: images/news/05-22-2025/DSC06290-scaled.png
