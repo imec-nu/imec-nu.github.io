@@ -46,5 +46,5 @@ We incorporate AvA into a wide range of real systems and applications in health,
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: ava_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'ava_cu'" %}
 

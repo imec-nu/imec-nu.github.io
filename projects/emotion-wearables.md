@@ -58,5 +58,5 @@ SPIDERS distinguishes between different classes of facial expression and real em
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: spiders_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'spiders_cu'" %}
 

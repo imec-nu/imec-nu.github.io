@@ -32,5 +32,5 @@ LegoSENSE leverages software drivers to detect and communicate with sensors on-t
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: legosense_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'legosense_cu'" %}
 

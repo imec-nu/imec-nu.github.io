@@ -32,5 +32,5 @@ Next, our AR overlay guides the user to place the stethoscope on his or her body
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: arsteth_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'arsteth_cu'" %}
 

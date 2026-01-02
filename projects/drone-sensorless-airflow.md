@@ -32,5 +32,5 @@ After sampling the airflow at a specific location, the drone uses a novel inform
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: airflow_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'airflow_cu'" %}
 

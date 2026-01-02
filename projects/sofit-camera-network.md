@@ -15,5 +15,5 @@ We present SoFIT, an easily-deployed and privacy-preserving camera network syste
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: camnetwork_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'camnetwork_cu'" %}
 

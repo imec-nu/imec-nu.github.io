@@ -16,5 +16,5 @@ We present a novel wearable sensor system that measures an individual’s sweat 
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: perspiration_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'perspiration_cu'" %}
 

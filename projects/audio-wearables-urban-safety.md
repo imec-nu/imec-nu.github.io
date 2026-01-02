@@ -98,5 +98,5 @@ We evaluate CSAFE at a real construction site, with a wide variety of constructi
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: urbansafety_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'urbansafety_cu'" %}
 

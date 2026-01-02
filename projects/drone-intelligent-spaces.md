@@ -31,5 +31,5 @@ We create a modular and reconfigurable drone platform, shown above, that allows 
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: homeai_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'homeai_cu'" %}
 

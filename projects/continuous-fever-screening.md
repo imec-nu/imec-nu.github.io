@@ -36,5 +36,5 @@ We designed the system to be low cost, easily deployable, and usable in both low
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: fever_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'fever_cu'" %}
 

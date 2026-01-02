@@ -34,5 +34,5 @@ There is a growing number of smart devices, sensors, and actuators throughout ou
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: aitherapist_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'aitherapist_cu'" %}
 

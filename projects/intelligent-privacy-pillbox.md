@@ -16,5 +16,5 @@ We present a novel privacy-preserving pillbox system to help patients improve me
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: pillbox_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'pillbox_cu'" %}
 

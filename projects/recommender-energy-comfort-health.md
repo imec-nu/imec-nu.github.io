@@ -34,5 +34,5 @@ Next, we develop RECA, a recommender system that expands the capabilities of rec
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: energyrec_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'energyrec_cu'" %}
 

@@ -16,5 +16,5 @@ For many people, the habit of leg shaking is an annoyance to themselves and peop
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: legshake_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'legshake_cu'" %}
 

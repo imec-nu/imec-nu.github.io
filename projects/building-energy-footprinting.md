@@ -60,5 +60,5 @@ CityEnergy is a scalable, real-time system for computing personal energy footpri
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filters="group: energyfootprint_cu" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'energyfootprint_cu'" %}
 
