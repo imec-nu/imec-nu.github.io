@@ -1,5 +1,5 @@
 ---
-title: '"MAESTRO: Adaptive Sparse Attention and Robust Learning for Multimodal Dynamic Time Series" Accepted and Presented at NeurIPS 2025 <span style="color:red, font-weight:bold">(Spotlight)</span>'
+title: '"MAESTRO: Adaptive Sparse Attention and Robust Learning for Multimodal Dynamic Time Series" Accepted and Presented at NeurIPS 2025 <span style="color:red">(Spotlight)</span>'
 author: imec
 group: recent
 image: images/news/12-05-2025/maestro_motivation_1.png

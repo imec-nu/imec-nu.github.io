@@ -20,11 +20,6 @@
       <a
         href="{{ link }}?search=&quot;tag: {{ tag }}&quot;"
         class="tag"
-		style="
-		  {% if tag downcase contains 'best' %}
-		    color:red; font-weight:bold;
-		  {% endif %}
-		"
         data-tooltip="Show items with the tag &quot;{{ tag }}&quot;"
       >
         {{ tag }}
