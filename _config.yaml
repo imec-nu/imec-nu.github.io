@@ -1,19 +1,20 @@
 # site properties and page defaults
-title: imec-nu
-subtitle: 
-description: An engaging 1-3 sentence description of your lab.
-header: images/background.jpg
-footer: images/background.jpg
-proofer: false
+title: IMEC Lab
+subtitle: Intelligent Mobile and Embedded Computing Lab
+description: At IMEC, we work at the intersection between systems, embedded AI, and data. We develop resource-efficient and real-time systems that can embed intelligent perception, reasoning, and understanding into common infrastructure and everyday objects found all around us and utilize these systems in efficient ways to enable useful services and improve our overall quality of life. Our work spans a number of domains, including mobile and embedded systems, cyber-physical systems, edge computing, signal processing, machine learning, wearables, robotics, health, intelligent built environments, etc.
+header: images/aerial960__FitMaxWzk3MCw2NTBd.jpg
+footer: images/tech.jpg
+logo-text: false
+header-dark: false
 
 # site social media and other links
 links:
-  email: contact@imec-nu.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: imec-nu
-  twitter: imec-nu
-  youtube: imec-nu
+  email: stephen.xia@northwestern.edu
+  orcid: 0000-0001-5713-8885
+  google-scholar: b6PNcXQAAAAJ&view_op=list_works&sortby=pubdate
+  github: donkerdude?tab=repositories
+  #twitter: donkerdude
+  #youtube: donkerdude
 
 ### jekyll settings
 
