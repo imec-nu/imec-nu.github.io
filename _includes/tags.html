@@ -21,8 +21,8 @@
         href="{{ link }}?search=&quot;tag: {{ tag }}&quot;"
         class="tag"
 		style="
-		  {% if tag contains 'Best' %}
-		    color:red; font-weight:bold;
+		  {% if tag contains 'Best' or tag contains 'Oral' or tag contains 'Spotlight'%}
+		    background-color:#F8CECC; color:#B85450; font-weight:bold;
 		  {% endif %}
 		"
         data-tooltip="Show items with the tag &quot;{{ tag }}&quot;"
