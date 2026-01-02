@@ -1,5 +1,5 @@
 ---
-title: 'RECA Wins Best Paper at BuildSys 2023'
+title: 'RECA Wins <span style="color:red">Best Paper</span> at BuildSys 2023'
 author: imec
 group: recent
 image: images/news/IMG_2181.jpg
