@@ -81,7 +81,7 @@ TW-CRL moves reinforcement learning beyond "learning from success" toward **lear
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filter="group: twcrl" %}
+{% include list.html data="citations" component="citation" style="rich" filter="group == 'twcrl'" %}
 
 
 
