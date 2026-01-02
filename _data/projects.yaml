@@ -1,47 +1,63 @@
-- title: Cool Dataset
-  subtitle: a subtitle
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+- title: Training AI Agents Efficiently from Failures
+  image: images/project/tw_crl/tw-crl-env.png
+  link: projects/twcrl
 
-- title: Cool Package
-  subtitle: a subtitle
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
+- title: Reconfigurable Drones and AI for Autonomous Homes, Spaces, and Environments
+  image: images/project/image-5.png
+  link: projects/drone-intelligent-spaces
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
+- title: Drone-based Airflow Sensing without Sensors
+  image: images/project/Minifly-labelled.png
+  link: projects/drone-sensorless-airflow
 
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+- title: Recommender Systems for Optimizing Energy, Comfort, and Health 
+  image: images/project/recEnergyWatch_IoTJ-1024x1024.png
+  link: projects/recommender-energy-comfort-health
 
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+- title: Modular and Reconfigurable Sensing Platforms
+  image: images/project/hw_overview_v3_cropped.png
+  link: projects/modular-reconfigurable-sensing
+
+- title: AR and AI-based Health Self-Screening
+  image: images/project/banner_1_cropped.png
+  link: projects/ai-stethoscope
+
+- title: Selective and Adaptive Audio Filtering for Mobile, Embedded, and Cyber-Physical Systems
+  image: images/project/system_architecture.png
+  link: projects/selective-audio-filtering
+
+- title: Audio Wearables for Urban Safety
+  image: images/project/Teardown_SEUS.PNG
+  link: projects/audio-wearables-urban-safety
+
+- title: Self-Orienting Camera Networks for Floor Mapping and Indoor Tracking
+  image: images/project/0.Implementation-1024x387.png
+  link: projects/sofit-camera-network
+
+- title: Building Energy Footprinting
+  image: images/project/Footprint-1024x331.png
+  link: projects/building-energy-footprinting
+
+- title: Robust, Continuous, and Multi-Person Fever Screening
+  image: images/project/3DMapping-1024x644.png
+  link: projects/continuous-fever-screening
+
+- title: Towards AI-based Mental Health Providers
+  image: images/project/answering_naming_frozen-1024x501.png
+  link: projects/ai-mental-health
+
+- title: Smart Textiles for Continuous Perspiration Sensing
+  image: images/project/sweat.png
+  link: projects/perspiration-smart-textiles
+
+- title: Wearables for Emotion Sensing
+  image: images/project/Picture7.png
+  link: projects/emotion-wearables
+
+- title: Smartphone Platforms for Detection and Notification of Leg Shaking
+  image: images/project/3d_scatter_oppositeleg_highlighted.png
+  link: projects/mobile-leg-shaking
+
+- title: Intelligent and Privacy Preserving Pillbox
+  image: images/project/pillbox-1024x766.jpg
+  link: projects/intelligent-privacy-pillbox

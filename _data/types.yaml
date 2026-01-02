@@ -2,7 +2,7 @@
 
 # team member roles
 
-principal-investigator:
+pi:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
@@ -14,10 +14,22 @@ phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
 
+visitingphd:
+  icon: fa-solid fa-plane
+  description: Visiting PhD Student
+
 undergrad:
   icon: fa-solid fa-user-graduate
   description: Undergraduate Student
+  
+ms:
+  icon: fa-solid fa-user-graduate
+  description: M.S. Student
 
+alum_ms:
+  icon: fa-solid fa-user-graduate
+  description: M.S. Student
+  
 programmer:
   icon: fa-solid fa-code
   description: Programmer
@@ -25,6 +37,10 @@ programmer:
 mascot:
   icon: fa-solid fa-dog
   description: Mascot
+
+manager:
+  icon: fa-solid fa-people-roof
+  description: Manager
 
 # general
 
@@ -96,12 +112,6 @@ twitter:
   tooltip: Twitter
   link: https://twitter.com/$VALUE
 
-bluesky:
-  icon: fa-brands fa-bluesky
-  text: Bluesky
-  tooltip: Bluesky
-  link: https://bsky.app/profile/$VALUE
-
 facebook:
   icon: fa-brands fa-facebook
   text: Facebook
@@ -151,6 +161,18 @@ warning:
 error:
   icon: fa-solid fa-ban
   color: "#ef4444"
+
+# presentations
+
+presentation:
+  icon: fa-solid fa-person-chalkboard
+  text: Presentation
+  tooltip: Presentation
+
+demonstration:
+  icon: fa-solid fa-laptop-code
+  text: Demonstration
+  tooltip: Demonstration
 
 # publications
 
