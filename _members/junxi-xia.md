@@ -9,6 +9,7 @@ links:
 
 <html>
    <head>
-      <meta http-equiv = "refresh" content = "0; url = https://www.linkedin.com/in/junxixia" />
+      <!-- <meta http-equiv = "refresh" content = "0; url = https://www.linkedin.com/in/junxixia" /> -->
+      <meta http-equiv = "refresh" content = "0; url = https://scholar.google.com/citations?user=kcogAMIAAAAJ&hl=en" />
    </head>
 </html>
