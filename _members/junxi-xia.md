@@ -1,6 +1,6 @@
 ---
 name: Junxi Xia
-image: images/people/junxi.jpg
+image: images/people/junxi.png
 role: phd
 links:
   email: JunxiXia2024@u.northwestern.edu
