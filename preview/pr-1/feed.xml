@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/preview/pr-1/feed.xml" rel="self" type="application/atom+xml" /><link href="/preview/pr-1/" rel="alternate" type="text/html" /><updated>2026-01-08T17:38:34+00:00</updated><id>/preview/pr-1/feed.xml</id><title type="html">IMEC Lab</title><subtitle>At IMEC, we work at the intersection between systems, embedded AI, and data. We develop resource-efficient and real-time systems that can embed intelligent perception, reasoning, and understanding into common infrastructure and everyday objects found all around us and utilize these systems in efficient ways to enable useful services and improve our overall quality of life. Our work spans a number of domains, including mobile and embedded systems, cyber-physical systems, edge computing, signal processing, machine learning, wearables, robotics, health, intelligent built environments, etc.</subtitle><entry><title type="html">“TW-CRL:Time-Weighted Contrastive Reward Learning for Efficient Inverse Reinforcement Learning” Accepted to AAAI 2026 (Oral)</title><link href="/preview/pr-1/2025/12/07/twcrl-accepted-aaai2026.html" rel="alternate" type="text/html" title="“TW-CRL:Time-Weighted Contrastive Reward Learning for Efficient Inverse Reinforcement Learning” Accepted to AAAI 2026 (Oral)" /><published>2025-12-07T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/12/07/twcrl-accepted-aaai2026</id><content type="html" xml:base="/preview/pr-1/2025/12/07/twcrl-accepted-aaai2026.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/12-07-2025/tw-crl-env.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Our work, <a href="https://arxiv.org/pdf/2504.05585">“TW-CRL:Time-Weighted Contrastive Reward Learning for Efficient Inverse Reinforcement Learning”</a>, was accepted and presented at <a href="https://aaai.org/conference/aaai/aaai-26/">AAAI 2026</a> for an oral presentation. This work was a collaboration between Yuxuan Li, Yicheng Gao, Ning Yang, and Stephen Xia.</p>
+
+<p>Reinforcement learning systems are powerful, but they often struggle in the real world for a simple reason: failure is silent. In many tasks—robot navigation, manipulation, or control—agents receive a reward only when they succeed, and nothing at all when they make irreversible mistakes. These hidden “trap states” can doom an agent to fail repeatedly without ever being told what went wrong.</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="TW-CRL architecture.">
+    <img src="/preview/pr-1/images/news/12-07-2025/method3.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="TW-CRL architecture." loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      TW-CRL architecture.
+
+    </figcaption>
+  
+</figure>
+
+<p>We present a new framework called Time-Weighted Contrastive Reward Learning (TW-CRL), which tackles this problem head-on by teaching agents to learn not just from success, but from failure, and to understand when those failures matter most.</p>
+
+<p>What sets this work apart is its contrastive use of both <em>successful and failed demonstrations</em>. Rather than blindly imitating experts, the agent learns to distinguish states that move it closer to a goal from those that quietly push it toward failure. This allows the system to avoid unseen trap states, explore more intelligently, and go beyond simple imitation.</p>
+
+<p>Moreover, instead of treating all steps in a demonstration equally, the method assigns greater importance to states that occur later in a trajectory, when success or failure becomes inevitable. By doing so, TW-CRL learns a <em>dense, informative reward function</em> that highlights critical decision points and implicitly penalizes states that lead to dead ends.</p>
+
+<p>Across eight challenging benchmarks, from maze navigation with hidden traps to continuous-control robotics tasks, TW-CRL consistently outperforms state-of-the-art inverse reinforcement learning methods. It converges faster, achieves higher returns, and exhibits greater robustness, especially in environments where failure is common early on.</p>
+
+<p>By formalizing the notion of trap states and showing how temporal structure and failed experiences can be turned into actionable learning signals, this work pushes reinforcement learning a step closer to real-world reliability, where knowing what not to do is just as important as knowing what works.</p>
+
+<p>Congratulations to the team!</p>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/news/12-07-2025/tw-crl-env.png" /><media:content medium="image" url="/preview/pr-1/images/news/12-07-2025/tw-crl-env.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">“MAESTRO: Adaptive Sparse Attention and Robust Learning for Multimodal Dynamic Time Series” Accepted and Presented at NeurIPS 2025 (Spotlight)</title><link href="/preview/pr-1/2025/12/05/maestro-accepted-neurips2025.html" rel="alternate" type="text/html" title="“MAESTRO: Adaptive Sparse Attention and Robust Learning for Multimodal Dynamic Time Series” Accepted and Presented at NeurIPS 2025 (Spotlight)" /><published>2025-12-05T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/12/05/maestro-accepted-neurips2025</id><content type="html" xml:base="/preview/pr-1/2025/12/05/maestro-accepted-neurips2025.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/12-05-2025/maestro_motivation_1.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Our work, <a href="https://arxiv.org/pdf/2509.25278">“MAESTRO: Adaptive Sparse Attention and Robust Learning for Multimodal Dynamic Time Series”</a>, was accepted and presented at <a href="https://neurips.cc/Conferences/2025">NeurIPS 2025</a> as a spotlight. This work was a collaboration between Payal Mohapatra, Yueyuan Sui, Akash Pandey, Stephen Xia, and Qi Zhu from Northwestern University.</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="MAESTRO overall architecture.">
+    <img src="/preview/pr-1/images/news/12-05-2025/overall_maestro.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="MAESTRO overall architecture." loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      MAESTRO overall architecture.
+
+    </figcaption>
+  
+</figure>
+
+<p>In this work, we present a new AI framework designed to make sense of dynamic, multimodal time-series data—even when large chunks of it are missing. Instead of forcing all sensor data into a rigid, one-size-fits-all model, MAESTRO adapts on the fly, deciding which signals matter most and how they should interact for a given task. Novelties, features, and contributions include:</p>
+
+<p><strong>(1) No “primary sensor: bias:</strong> Most existing systems depend on a single anchor modality (like video or motion). MAESTRO drops that assumption entirely, letting any modality take the lead when it’s most informative, and stepping back when it’s not.</p>
+
+<p><strong>(2) Built for missing and failing sensors:</strong> Real deployments rarely have perfect data. MAESTRO explicitly encodes missing sensors using symbolic tokens and dynamically reallocates its attention budget, allowing it to remain accurate even when up to 40% of modalities are missing.</p>
+
+<p><strong>(3) Efficient learning at scale:</strong> Instead of expensive pairwise modeling between every sensor, MAESTRO builds a long multimodal sequence and processes it with sparse attention, reducing computation while still capturing rich cross-modal interactions.</p>
+
+<p><strong>(4) Adaptive expertise via Mixture-of-Experts:</strong> At the final stage, MAESTRO routes information through a sparse Mixture-of-Experts (MoE) layer. Different experts naturally specialize for different sensor combinations—without extra losses or hand-crafted rules—making the system robust and flexible in unpredictable settings.</p>
+
+<p>We evaluate across four real-world datasets spanning healthcare, activity recognition, and clinical prediction—with as many as 17 sensing modalities. MAESTRO consistently outperforms strong multivariate and multimodal baselines, including 4–8% gains under full sensor availability, and ~9% average improvement when sensors are partially missing.</p>
+
+<p>MAESTRO moves multimodal learning closer to real-world readiness, offering a general-purpose blueprint for learning from heterogeneous, unreliable sensor data. This is exactly the type of scenarios we see in wearables, mobile health, and IoT systems today.</p>
+
+<p><em>If multimodal time-series learning is an orchestra, MAESTRO is the conductor that keeps the music playing—even when half the instruments drop out.</em></p>
+
+<p>Congratulations to the team!</p>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/news/12-05-2025/maestro_motivation_1.png" /><media:content medium="image" url="/preview/pr-1/images/news/12-05-2025/maestro_motivation_1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">IMEC hosts Third ACM International Workshop on Intelligent Acoustics Systems and Applications (IASA 2025) at MobiCom</title><link href="/preview/pr-1/2025/11/09/imec-iasa-mobicom2025.html" rel="alternate" type="text/html" title="IMEC hosts Third ACM International Workshop on Intelligent Acoustics Systems and Applications (IASA 2025) at MobiCom" /><published>2025-11-09T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/11/09/imec-iasa-mobicom2025</id><content type="html" xml:base="/preview/pr-1/2025/11/09/imec-iasa-mobicom2025.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/11-09-2025/IMG_4811.jpeg" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Stephen Xia hosts the <a href="https://intelligent-acoustics.org/2025/">IASA 2025</a> workshop at <a href="https://www.sigmobile.org/mobicom/2025/">MobiCom 2025</a>, which is the premier venue for all aspects of acoustic sensing, systems, and applications, including mobile and wearable sensing or communication utilizing sound, vibration, ultrasound, and infrasound, algorithms in acoustic intelligence, security and privacy utilizing acoustics, and data or deployment experiences.</p>
+
+<p>This full day workshop included two key notes: Professor Qian Zhang (HKUST) discussing her work at the intersection between acoustics and health, as well as Professor Nirupam Roy (University of Maryland, College Park), discussing his work at the intersection between acoustics and AI. The workshop also featured a panel of experts and seven full papers covering topics such as in-ear acoustics, smartphone sensing, and fitness/health.</p>
+
+<p>The full program can be found <a href="https://intelligent-acoustics.org/2025/">here</a>.</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="Keynote from Professor Qian Zhang HKUST">
+    <img src="/preview/pr-1/images/news/11-09-2025/IMG_4805.jpeg" style="
+        width: auto;
+        max-height: unset;
+      " alt="Keynote from Professor Qian Zhang HKUST" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      Keynote from Professor Qian Zhang (HKUST)
+
+    </figcaption>
+  
+</figure>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="Keynote from Professor Nirupam Roy University of Maryland, College Park">
+    <img src="/preview/pr-1/images/news/11-09-2025/IMG_4808.jpeg" style="
+        width: auto;
+        max-height: unset;
+      " alt="Keynote from Professor Nirupam Roy University of Maryland, College Park" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      Keynote from Professor Nirupam Roy (University of Maryland, College Park)
+
+    </figcaption>
+  
+</figure>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="Zhaoyi Liu KU Leuven presents her work BReAD: Boosting Relational Knowledge Distillationwith Large Language Model for Acoustic IndustrialAnomaly Detection">
+    <img src="/preview/pr-1/images/news/11-09-2025/IMG_4808.jpeg" style="
+        width: auto;
+        max-height: unset;
+      " alt="Zhaoyi Liu KU Leuven presents her work BReAD: Boosting Relational Knowledge Distillationwith Large Language Model for Acoustic IndustrialAnomaly Detection" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      Zhaoyi Liu (KU Leuven) presents her work ‘BReAD: Boosting Relational Knowledge Distillationwith Large Language Model for Acoustic IndustrialAnomaly Detection’
+
+    </figcaption>
+  
+</figure>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/news/11-09-2025/IMG_4811.jpeg" /><media:content medium="image" url="/preview/pr-1/images/news/11-09-2025/IMG_4811.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">“IMUSteth: On-Body Stethoscope Localization with Inertial Sensing for Home Self-Screening” Accepted and Presented at ACM IASA 2025</title><link href="/preview/pr-1/2025/11/08/imusteth-accepted-iasa2025.html" rel="alternate" type="text/html" title="“IMUSteth: On-Body Stethoscope Localization with Inertial Sensing for Home Self-Screening” Accepted and Presented at ACM IASA 2025" /><published>2025-11-08T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/11/08/imusteth-accepted-iasa2025</id><content type="html" xml:base="/preview/pr-1/2025/11/08/imusteth-accepted-iasa2025.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/project/IMUSteth-1.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Our work, <a href="https://dl.acm.org/doi/abs/10.1145/3737901.3768363">“IMUSteth: On-Body Stethoscope Localization with Inertial Sensing for Home Self-Screening”</a>, was accepted and presented at the <a href="https://intelligent-acoustics.org/2025/">IASA 2025</a> workshop, during <a href="https://www.sigmobile.org/mobicom/2025/">MobiCom 2025</a>. IASA 2025 is the premier workshop for all aspects of acoustic sensing, systems, and applications.</p>
+
+<p>In this work, we extend our prior work on an <a href="https://dl.acm.org/doi/abs/10.1145/3583120.3586962">augmented reality-based stethoscope</a>, originally published to <a href="https://ipsn.acm.org/2023/">IPSN 2023</a>, that guides users on the steps to take to screen their own health without a professional healthcare provider. This requires the system to understand where the user placed the stethoscope on their body, which leveraged a full-body view from a camera. This is both unwieldy and privacy sensitive.</p>
+
+<p>In this work, we remove the need for the user to position themselves in front of a camera. Instead, we leverage only an inertial measurement unit, several physical characteristics of the user and an initial calibration phase (e.g., move arms in a circle) to track a user’s placement of the stethoscope on their body. This enables more freedom on where and when the user can perform health screening, making accessibility to preventative health screening more available.</p>
+
+<p>Congratulations to Yiting Zhang and the team!</p>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/project/IMUSteth-1.png" /><media:content medium="image" url="/preview/pr-1/images/project/IMUSteth-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">“FlexiFly: Interfacing the Physical World with Foundation Models Empowered by Reconfigurable Drone Systems” Accepted and Presented at ACM SenSys 2025</title><link href="/preview/pr-1/2025/05/23/flexifly-accepted-sensys2025.html" rel="alternate" type="text/html" title="“FlexiFly: Interfacing the Physical World with Foundation Models Empowered by Reconfigurable Drone Systems” Accepted and Presented at ACM SenSys 2025" /><published>2025-05-23T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/05/23/flexifly-accepted-sensys2025</id><content type="html" xml:base="/preview/pr-1/2025/05/23/flexifly-accepted-sensys2025.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/05-23-2025/PXL_20250509_211714574-scaled.webp" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Our work, <a href="https://dl.acm.org/doi/10.1145/3715014.3722081">“FlexiFly: Interfacing the Physical World with Foundation Models Empowered by Reconfigurable Drone Systems”</a>, was accepted and presented at <a href="https://sensys.acm.org/2025/">SenSys 2025</a> during <a href="https://cps-iot-week2025.ics.uci.edu/">CPS-IoT Week 2025</a>. This research was developed through a collaborative effort between Northwestern University and Columbia University, with contributions from Minghui (Scott) Zhao, Junxi Xia, Kaiyuan Hou, Yanchen Liu, and Professor Stephen Xia, Professor Xiaofan (Fred) Jiang.</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="FlexiFly s operation pipeline">
+    <img src="/preview/pr-1/images/news/05-23-2025/flexifly_pipeline.webp" style="
+        width: auto;
+        max-height: unset;
+      " alt="FlexiFly s operation pipeline" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      FlexiFly’s operation pipeline
+
+    </figcaption>
+  
+</figure>
+
+<p>In this work, we addressed a fundamental challenge in enabling foundation models to interact meaningfully with physical environments. While foundation models excel at digital tasks, they struggle when required to understand localized events in large physical spaces or perform real-world actions. Our contributions are summarized as follows:</p>
+
+<p><strong>(1) Novel Foundation Model Orchestration Framework:</strong> We introduce a comprehensive framework that integrates multiple large language models, vision-language models, and an open-set object detection model for dynamic, task-driven sensor/actuator selection.</p>
+
+<p><strong>(2) Advanced Image Segmentation Approach:</strong> We propose a new segmentation method that reliably pinpoints task-relevant areas even in large, cluttered environments, overcoming limitations of existing approaches.</p>
+
+<p><strong>(3) Custom Reconfigurable Drone Platform:</strong> We present a purpose-built drone system capable of autonomously adapting its sensors and actuators in response to commands from the FM orchestration framework, enabling seamless physical interaction and significantly improving task success rates in real-world deployments compared to static sensor approaches.</p>
+
+<p>FlexiFly enables foundation models to “zoom in” on areas of interest using reconfigurable drones that can automatically swap between different sensing and actuation modules. Through extensive real-world evaluations, our system demonstrated up to 85% improvement in task success rates across diverse applications including object identification, environmental monitoring, surveillance, and physical item delivery.</p>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/news/05-23-2025/PXL_20250509_211714574-scaled.webp" /><media:content medium="image" url="/preview/pr-1/images/news/05-23-2025/PXL_20250509_211714574-scaled.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">“DomAIn: Towards Programless Smart Homes” receives Best Paper Award at ACM HumanSys 2025</title><link href="/preview/pr-1/2025/05/22/domain-bestpaper-humansys2025.html" rel="alternate" type="text/html" title="“DomAIn: Towards Programless Smart Homes” receives Best Paper Award at ACM HumanSys 2025" /><published>2025-05-22T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/05/22/domain-bestpaper-humansys2025</id><content type="html" xml:base="/preview/pr-1/2025/05/22/domain-bestpaper-humansys2025.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/05-22-2025/DSC06290-scaled.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Our paper, in collaboration with Columbia University, <a href="https://dl.acm.org/doi/10.1145/3722570.3726888">“DomAIn: Towards Programless Smart Homes”</a> has been accepted for publication in <a href="https://humansys-workshop.github.io/WS/2025/index.html">ACM HumanSys 2025</a>, co-located with <a href="https://cps-iot-week2025.ics.uci.edu/">CPS-IoT Week 2025</a>, and received the Best Paper Award!</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/05-22-2025/sys_arch.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>This work tackles a critical barrier to smart home adoption: the complexity of programming automation tasks. While 70% of U.S. homes have smart devices, widespread adoption remains limited because current platforms require users to manually program step-by-step logic, severely limiting accessibility.</p>
+
+<p>DomAIn revolutionizes this by introducing a smart home platform that automatically generates and deploys automation logic from simple voice commands—no programming required. Users can say “Alert me if someone falls” and DomAIn automatically creates appropriate sensor pipelines based on available devices and user preferences across four dimensions: accuracy, privacy, coverage, and power efficiency.</p>
+
+<p>Key innovations include:</p>
+
+<ul>
+  <li><strong>Voice-to-Automation:</strong> Simple spoken commands automatically generate complex sensor pipelines</li>
+  <li><strong>Preference-Based Optimization:</strong> Creates privacy-focused pipelines that minimize camera usage or power-efficient solutions using minimal energy</li>
+  <li><strong>Dynamic Adaptability:</strong> Automatically reconfigures when devices fail or become unavailable</li>
+</ul>
+
+<p>The system was validated through real-world deployments using various sensors including cameras, microphones, vibration detectors, and programmable drones, demonstrating practical applicability across diverse smart home scenarios.</p>
+
+<p>Congratulations to Yueyuan Sui, Yiting Zhang, Yanchen Liu, Minghui Zhao, Kaiyuan Hou, Jingping Nie, and the rest of the team!</p>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/news/05-22-2025/DSC06290-scaled.png" /><media:content medium="image" url="/preview/pr-1/images/news/05-22-2025/DSC06290-scaled.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">“Unsupervised Deep Clustering for Human Behavior Understanding” Accepted and Presented at ACM HumanSys 2025</title><link href="/preview/pr-1/2025/05/21/cpter-accepted-humansys2025.html" rel="alternate" type="text/html" title="“Unsupervised Deep Clustering for Human Behavior Understanding” Accepted and Presented at ACM HumanSys 2025" /><published>2025-05-21T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/05/21/cpter-accepted-humansys2025</id><content type="html" xml:base="/preview/pr-1/2025/05/21/cpter-accepted-humansys2025.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/project/c-pter_overview-1.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Our paper, <a href="https://dl.acm.org/doi/abs/10.1145/3722570.3726885">“Unsupervised Deep Clustering for Human Behavior Understanding”</a> has been accepted for publication in <a href="https://humansys-workshop.github.io/WS/2025/index.html">ACM HumanSys 2025</a>, co-located with <a href="https://cps-iot-week2025.ics.uci.edu/">CPS-IoT Week 2025</a>!</p>
+
+<p>In this work, we propose Compressed-Pseudo-Temporal Enhanced Representation Learning (C-PTER), a novel unsupervised clustering framework for human-centered behavior analysis (architecture shown above). With the growing prevalence of wearables, smartphones, and IoT devices, vast amounts of human activity data are collected in real-world settings, yet traditional supervised learning approaches require extensive manual labeling, making them impractical for large-scale deployment. Existing deep clustering methods, such as autoencoder-based approaches, often fail to capture temporal dependencies and struggle with noisy sensor readings, leading to suboptimal clustering performance.</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/project/c-pter_t-sne-1.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>C-PTER proposes a pseudo-temporal feature extractor with a parallel CNN-LSTM autoencoder to enable robust spatial-temporal representation learning. We demonstrate up to 30% improvement in normalized mutual information and 21% improvement in downstream task performance on a variety of human activity datasets, compared with existing state-of-art clustering methods.</p>
+
+<p>Congratulations to Weisi Yang and the rest of the team!</p>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/project/c-pter_t-sne-1.png" /><media:content medium="image" url="/preview/pr-1/images/project/c-pter_t-sne-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Weisi Yang presents work on detecting intimate partner infiltrations on smartphones at Discovery Partners Institute</title><link href="/preview/pr-1/2025/04/11/aid-presented-msn2025.html" rel="alternate" type="text/html" title="Weisi Yang presents work on detecting intimate partner infiltrations on smartphones at Discovery Partners Institute" /><published>2025-04-11T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2025/04/11/aid-presented-msn2025</id><content type="html" xml:base="/preview/pr-1/2025/04/11/aid-presented-msn2025.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/04-11-2025/IMG_3456.jpeg" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/04-11-2025/IMG_3455.jpeg" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>Weisi Yang presents our work on a <a href="https://arxiv.org/pdf/2502.03682">smartphone-based platform for detecting and monitoring intimate partner infiltration</a> at the SIGCHI sponsored <a href="https://dpi.illinois.edu/wp-content/uploads/2025/03/Call-for-posters-MSN-workshop-at-DPIv2.pdf">Mobile Social Networking Workshop</a> at Discovery Partners Institute.</p>
+
+<p>Our work introduces AID (Automated IPI Detection), the first system designed specifically to detect Intimate Partner Infiltration, a class of abuse that slips past traditional cybersecurity defenses because the perpetrator often already has the phone, the passcode, or the victim’s trust.</p>
+
+<p>Rather than treating these incidents as conventional cyberattacks, we formalize a new threat model that captures the reality of intimate partner abuse: attackers are insiders, not hackers, and harm comes from what they do on the phone as much as who is holding it.</p>
+
+<p>Building on this foundation, AID introduces a dual-branch AI architecture that continuously and silently monitors smartphones. One branch determines whether the current user is the device owner or not, while the other infers whether their actions reflect harmful IPI intent. Only when both conditions are met does the system flag risk—dramatically reducing false alarms that could otherwise retraumatize victims or escalate abuse. Crucially, AID runs entirely on-device, relies only on background-accessible signals, and is designed to remain invisible to abusers.</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="AID system architecture.">
+    <img src="/preview/pr-1/images/news/04-11-2025/ipv_aid_system_flow-1.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="AID system architecture." loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+    <figcaption class="figure-caption">
+      AID system architecture.
+
+    </figcaption>
+  
+</figure>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/news/04-11-2025/IMG_3456.jpeg" /><media:content medium="image" url="/preview/pr-1/images/news/04-11-2025/IMG_3456.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">EmbodiedRDA Receives Best Demo Runner-Up Award at MobiCom 2024</title><link href="/preview/pr-1/2024/12/02/embodiedrda-bestdemorunnerup-mobicom2024.html" rel="alternate" type="text/html" title="EmbodiedRDA Receives Best Demo Runner-Up Award at MobiCom 2024" /><published>2024-12-02T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2024/12/02/embodiedrda-bestdemorunnerup-mobicom2024</id><content type="html" xml:base="/preview/pr-1/2024/12/02/embodiedrda-bestdemorunnerup-mobicom2024.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/12-02-2025/PXL_20241120_000535214-scaled.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p>We demonstrated our work <a href="https://dl.acm.org/doi/abs/10.1145/3636534.3698846">“EmbodiedRDA: Connecting Foundation Models with the Physical World using Reconfigurable Drone Agents”</a> and was awarded the Best Demo Runner-Up award at the 30th Annual International Conference on Mobile Computing and Networking (<a href="https://www.sigmobile.org/mobicom/2024/">ACM MobiCom 2024</a>) in Washington, DC.</p>
+
+<p>EmbodiedRDA connects foundation models with the physical world through a custom-designed drone platform that autonomously reconfigures itself with different sensors and actuators depending on the task at hand. The system adapts to various tasks in physical environments – from locating objects to environmental monitoring and physical assistance.</p>
+
+<p>Congratulations to Junxi Xia, Minghui Zhao, Kaiyuan Hou, and the rest of the team!</p>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/12-02-2025/mmexport1732152045989-scaled.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/news/12-02-2025/PXL_20241120_000535214-scaled.png" /><media:content medium="image" url="/preview/pr-1/images/news/12-02-2025/PXL_20241120_000535214-scaled.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">“TRAMBA: Speech Enhancement for Mobile Systems”, Accepted to ACM IMWUT, To Be Presented at UbiComp / ISWC 2025</title><link href="/preview/pr-1/2024/09/20/tramba-accepted-imwut2024.html" rel="alternate" type="text/html" title="“TRAMBA: Speech Enhancement for Mobile Systems”, Accepted to ACM IMWUT, To Be Presented at UbiComp / ISWC 2025" /><published>2024-09-20T00:00:00+00:00</published><updated>2026-01-08T17:33:38+00:00</updated><id>/preview/pr-1/2024/09/20/tramba-accepted-imwut2024</id><content type="html" xml:base="/preview/pr-1/2024/09/20/tramba-accepted-imwut2024.html"><![CDATA[<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/preview/pr-1/images/news/tramba_datacollection.jpg" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/preview/pr-1/images/fallback.svg'; this.onerror = null;" />
+  </a>
+  
+</figure>
+
+<p><a href="https://dl.acm.org/doi/10.1145/3699757">“TRAMBA: A Hybrid Transformer and Mamba Architecture for Practical Audio and Bone Conduction Speech Super Resolution and Enhancement on Mobile and Wearable Platforms”</a> was accepted to Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT) and will be presented at <a href="https://ubicomp.hosting.acm.org/ubicompiswc2025_wp/">UbiComp / ISWC 2025</a>.</p>
+
+<p>In this work, we present a novel architecture for enhancing speech on mobile and wearable platforms. This work bridges the gap speech enhancement quality from computationally heavy techniques (e.g., GANs) and the compute efficiency of lightweight techniques (e.g., U-Net). Congrats to Yueyuan Sui and the rest of the team!</p>]]></content><author><name>imec</name></author><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/preview/pr-1/images/project/tramba_glasses.png" /><media:content medium="image" url="/preview/pr-1/images/project/tramba_glasses.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
