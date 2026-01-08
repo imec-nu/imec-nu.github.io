@@ -392,21 +392,21 @@
     <h1 id="tramba-practical-bone-conduction--imu-speech-enhancement">TRAMBA: Practical Bone-Conduction / IMU Speech Enhancement</h1>
 
 <figure class="figure">
-  <a class="figure-image" aria-label="TRAMBA enhances vibration-based speech BCM ACCEL , which is naturally robust to ambient noise but lacks high-frequency components.">
+  <a class="figure-image" aria-label="TRAMBA enhances vibration-based speech BCM ACCEL : naturally robust to ambient noise but missing high-frequency components.">
     <img src="/images/project/tramba_fig1_overview.png" style="
         width: auto;
         max-height: unset;
-      " alt="TRAMBA enhances vibration-based speech BCM ACCEL , which is naturally robust to ambient noise but lacks high-frequency components." loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      " alt="TRAMBA enhances vibration-based speech BCM ACCEL : naturally robust to ambient noise but missing high-frequency components." loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   
     <figcaption class="figure-caption">
-      TRAMBA enhances vibration-based speech (BCM/ACCEL), which is naturally robust to ambient noise but lacks high-frequency components.
+      TRAMBA enhances vibration-based speech (BCM/ACCEL): naturally robust to ambient noise but missing high-frequency components.
 
     </figcaption>
   
 </figure>
 
-<p>TRAMBA is a hybrid Transformer + Mamba model for acoustic and bone-conduction speech super-resolution and enhancement on mobile/wearable platforms. It is designed to be practical: small memory footprint, fast inference, and quick user-specific fine-tuning.</p>
+<p>Vibration-based speech sensing (e.g., bone-conduction microphones and accelerometers) is inherently robust to ambient noise, but it loses high-frequency details that are critical for intelligibility and naturalness. TRAMBA restores these missing components via practical super-resolution and enhancement, enabling real-time, on-device deployment on a wearable + smartphone pipeline.</p>
 
 <figure class="figure">
   <a class="figure-image" aria-label="Performance vs. efficiency trade-offs compared with state-of-the-art U-Net and GAN baselines model size, inference time, and fine-tuning time .">
@@ -418,6 +418,55 @@
   
     <figcaption class="figure-caption">
       Performance vs. efficiency trade-offs compared with state-of-the-art U-Net and GAN baselines (model size, inference time, and fine-tuning time).
+
+    </figcaption>
+  
+</figure>
+
+<p><strong>Why TRAMBA is practical</strong></p>
+<ul>
+  <li>
+<strong>Strong quality + fast inference</strong> on 512 ms windows.</li>
+  <li>
+<strong>Small model footprint</strong> suitable for mobile deployment.</li>
+  <li>
+<strong>Low-rate sensing</strong> to reduce sampling + wireless transmission cost.</li>
+  <li>
+<strong>Quick user-specific fine-tuning</strong> using a small amount of paired vibration data.</li>
+</ul>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<h2 id="core-idea-practical-super-resolution-from-low-rate-vibration">Core Idea: Practical Super-Resolution from Low-Rate Vibration</h2>
+
+<p>Unlike over-the-air (OTA) audio, BCM/ACCEL signals already suppress many ambient noises, but they contain limited high-frequency energy. TRAMBA targets <strong>robust super-resolution from signals directly sampled at low rates</strong> (rather than “filter then decimate”), which enables savings on both:</p>
+<ul>
+  <li>
+<strong>sampling power</strong>, and</li>
+  <li>
+<strong>wireless transmission power</strong>.</li>
+</ul>
+
+<figure class="figure">
+  <a class="figure-image" aria-label="Effect of sampling rate on quality: TRAMBA remains competitive even at low sampling rates.">
+    <img src="/images/project/tramba_fig6_sampling_rate.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="Effect of sampling rate on quality: TRAMBA remains competitive even at low sampling rates." loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      Effect of sampling rate on quality: TRAMBA remains competitive even at low sampling rates.
 
     </figcaption>
   
@@ -452,11 +501,48 @@
   
 </figure>
 
-<p>Key ideas:</p>
+<p>TRAMBA adopts a modified U-Net backbone with:</p>
 <ul>
-  <li>Hybrid Transformer + Mamba: attention helps generate complex formants; Mamba reduces memory and improves speed.</li>
-  <li>Pre-train on widely available OTA audio, then fine-tune with a small amount of paired vibration data.</li>
+  <li>
+<strong>self-attention</strong> in downsampling/upsampling blocks to model complex speech structure,</li>
+  <li>a <strong>Mamba bottleneck</strong> for memory-efficient long-range modeling,</li>
+  <li>and mobile-friendly design choices to balance quality vs. latency.</li>
 </ul>
+
+<h3 id="benchmark-snapshot-ota-audio-sr-4-khz--16-khz">Benchmark snapshot (OTA Audio SR, 4 kHz → 16 kHz)</h3>
+<p>On the OTA audio super-resolution benchmark (512 ms window), TRAMBA achieves:</p>
+<ul>
+  <li>
+<strong>Params:</strong> 5.2M</li>
+  <li>
+<strong>Model size:</strong> 19.7 MB</li>
+  <li>
+<strong>Inference time:</strong> 2.33 ms (NVIDIA L40)</li>
+  <li>
+<strong>SNR / PESQ / STOI / LSD:</strong> 23.24 / 3.23 / 0.948 / 0.827</li>
+</ul>
+
+<p>(These values match Table 1 in the paper.)</p>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<h2 id="training--personalization-user-specific-fine-tuning">Training &amp; Personalization (User-Specific Fine-Tuning)</h2>
+
+<p>TRAMBA follows a practical training pipeline:
+1) <strong>Pre-train</strong> using widely available OTA audio (simulate low-rate inputs by attenuating high-frequency components).
+2) <strong>Fine-tune</strong> with a small amount of paired vibration data (BCM/ACCEL ↔ OTA reference) for user-specific adaptation.</p>
+
+<p>This personalization step is key for handling different users and sensor placements.</p>
   </section>
 
   
@@ -487,7 +573,22 @@
   
 </figure>
 
-<p>We integrate TRAMBA into an end-to-end wearable/mobile pipeline to enable real-time enhancement in noisy environments and reduce sensing + transmission costs by allowing lower sampling rates.</p>
+<p>TRAMBA is integrated into an end-to-end wearable/mobile pipeline:</p>
+<ul>
+  <li>Wearable streams low-rate BCM/ACCEL data to a smartphone.</li>
+  <li>Smartphone runs enhancement in real time and supports fast personalization.</li>
+</ul>
+
+<h3 id="power--data-rate-savings-wearable-sensing--streaming">Power + data-rate savings (wearable sensing + streaming)</h3>
+<p>Sampling/streaming at <strong>4 kHz (64 kbps)</strong> consumes <strong>3.21 mW</strong>, while streaming full-resolution <strong>16 kHz (256 kbps)</strong> consumes <strong>6.48 mW</strong>.<br>
+At <strong>500 Hz (8 kbps)</strong>, power drops to <strong>2.49 mW</strong>, which corresponds to ~<strong>160% longer battery life</strong> vs. 16 kHz (6.48 / 2.49 ≈ 2.60×).<br>
+(See Table 9.)</p>
+
+<p>The paper also reports that operating at <strong>4 kHz</strong> enables <strong>75% less transmitted data</strong> and <strong>&gt;50% lower power</strong> compared to 16 kHz OTA streaming.</p>
+
+<h3 id="real-time-latency-on-phones">Real-time latency on phones</h3>
+<p>TRAMBA processes <strong>512 ms windows</strong> and achieves <strong>&lt;30 ms</strong> inference time on modern iPhones (e.g., iPhone 15 Pro: 19.584 ms; iPhone 12: 27.931 ms), enabling real-time enhancement.
+(See Table 10.)</p>
   </section>
 
   
@@ -501,22 +602,14 @@
   <size></size>
 -->
 
-<h2 id="key-results">Key Results</h2>
+<h2 id="robustness-noisy-environments--movement">Robustness: Noisy Environments &amp; Movement</h2>
 
-<figure class="figure">
-  <a class="figure-image" aria-label="Effect of sampling rate on super-resolution quality: TRAMBA remains competitive even at low sampling rates.">
-    <img src="/images/project/tramba_fig6_sampling_rate.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="Effect of sampling rate on super-resolution quality: TRAMBA remains competitive even at low sampling rates." loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-    <figcaption class="figure-caption">
-      Effect of sampling rate on super-resolution quality: TRAMBA remains competitive even at low sampling rates.
-
-    </figcaption>
-  
-</figure>
+<ul>
+  <li>
+<strong>Noise robustness:</strong> TRAMBA maintains high and consistent performance even when ambient noise becomes extremely large (paper notes cases where noise is ~10 orders of magnitude louder), while OTA denoising/source-separation can introduce distortions.</li>
+  <li>
+<strong>Movement robustness:</strong> With a simple 10 Hz high-pass filter, performance under walking remains similar to standing still (Table 8).</li>
+</ul>
   </section>
 
   
