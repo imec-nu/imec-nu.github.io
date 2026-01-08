@@ -66,4 +66,7 @@ We integrate TRAMBA into an end-to-end wearable/mobile pipeline to enable real-t
 
 ## Publications
 
-{% include list.html data="citations" component="citation" style="rich" filter="group == 'tramba'" %}
+- **TRAMBA: A Hybrid Transformer and Mamba Architecture for Practical Audio and Bone Conduction Speech Super Resolution and Enhancement on Mobile and Wearable Platforms.**
+  *IMWUT 2024.*  
+  https://dl.acm.org/doi/10.1145/3699757
+
