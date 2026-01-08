@@ -61,3 +61,7 @@
 - title: Intelligent and Privacy Preserving Pillbox
   image: images/project/pillbox-1024x766.jpg
   link: projects/intelligent-privacy-pillbox
+
+- title: "TRAMBA: Practical Audio and Bone-Conduction Speech Super-Resolution"
+  image: images/project/tramba_glasses.png
+  link: projects/tramba
