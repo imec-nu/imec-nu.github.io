@@ -1,5 +1,5 @@
 ---
-title: TRAMBA: Practical Bone-Conduction / IMU Speech Enhancement
+title: 'TRAMBA: Practical Bone-Conduction / IMU Speech Enhancement'
 ---
 
 # TRAMBA: Practical Bone-Conduction / IMU Speech Enhancement
