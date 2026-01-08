@@ -1,6 +1,6 @@
 ---
 name: Lijia Jiang (Now at Meta)
-image: images/icon.png
+image: images/people/lijia.png
 role: alum_ms
 links:
   email: lijiajiang2025@u.northwestern.edu
