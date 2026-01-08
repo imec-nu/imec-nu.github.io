@@ -58,9 +58,9 @@ We integrate TRAMBA into an end-to-end wearable/mobile pipeline to enable real-t
 
 ## Code and Media
 
-{% include button.html type="paper" text="Paper (IMWUT 2024)" link="PUT_PAPER_LINK_HERE" %}
-{% include button.html type="source" text="Code" link="PUT_GITHUB_LINK_HERE" %}
-{% include button.html type="demonstration" text="Demo Video" link="PUT_VIDEO_LINK_HERE" %}
+{% include button.html type="paper" text="Paper (IMWUT 2024)" link="https://dl.acm.org/doi/pdf/10.1145/3699757" %}
+{% include button.html type="source" text="Code" link="https://github.com/IMEC-Northwestern/TRAMBA" %}
+{% include button.html type="demonstration" text="Demo Page" link="https://imec-northwestern.github.io/TRAMBAPage/" %}
 
 {% include section.html %}
 
