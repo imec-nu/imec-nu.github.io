@@ -65,3 +65,7 @@
 - title: "TRAMBA: Practical Audio and Bone-Conduction Speech Super-Resolution"
   image: images/project/tramba_glasses.png
   link: projects/Tramba
+
+- title: "MAESTRO: Adaptive Sparse Attention and Robust Learning for Multimodal Dynamic Time Series"
+  image: images/project/maestro_motivation_1.png
+  link: projects/maestro
