@@ -91,7 +91,7 @@ On WESAD (Table 3), MAESTRO delivers strong accuracy with practical compute:
 
 {% include button.html type="paper" text="Paper (NeurIPS 2025)" link="https://arxiv.org/abs/2509.25278" %}
 
-{% include button.html type="source" text="Code" link="https://github.com/..." %}
+{% include button.html type="source" text="Code" link="https://github.com/payalmohapatra/MAESTRO" %}
 
 {% include section.html %}
 
