@@ -19,5 +19,5 @@ nav:
 # {% include icon.html icon="fa-solid fa-users" %}Alumni
 
 {% include list.html data="members" component="portrait" filter="role == 'alum_ms'" %}
-
+{% include list.html data="members" component="portrait" filter="role == 'postdoc'" %}
 
